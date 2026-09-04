@@ -1,0 +1,42 @@
+/** Descriptive image alts — Google rejects empty or keyword-only alts. */
+export const DESCRIPTIVE_IMAGE_ALTS = {
+	hero: 'Hunt: Showdown Cheats hero — ESP and aimbot overlay in Hunt: Showdown',
+	espWallhack: 'Wallhack outlines showing Hunters and grunts through walls',
+	aimbotCombat: 'Soft aim assist overlay during an Hunt: Showdown raid',
+	squadFight: 'Hunt: Showdown Cheats combat overlay during a squad fight',
+	playerEsp: 'Player ESP boxes and distance readouts in a Hunt: Showdown raid',
+	headerArt: 'Aimbot view and bone priority controls for Hunt: Showdown',
+	cheatsPackage: 'Extraction ESP threat overlay for Hunt: Showdown',
+	rebootFight: 'Aimbot assist during a Hunt: Showdown firefight',
+	battleRoyale: 'Hunt: Showdown Cheats in-raid overview for Windows PC',
+	battleRoyaleIsland: 'ESP markers for loot and extraction points in Hunt: Showdown',
+};
+
+/** Page-level image alt by pageId (EN source of truth). */
+export const PAGE_IMAGE_ALTS = {
+	home: 'Hunt: Showdown Cheats homepage hero — ESP and aimbot for Hunt: Showdown',
+	'hunt-showdown-esp': 'Hunt: Showdown ESP player boxes and distance readouts in a raid',
+	'hunt-showdown-aimbot': 'Hunt: Showdown aimbot and soft aim controls on Windows PC',
+	features: 'Hunt: Showdown Cheats features — ESP, soft aim, and radar screenshots',
+	pricing: 'Hunt: Showdown Cheats store plans for monthly and lifetime licenses',
+	setup: 'Hunt: Showdown Cheats setup guide screenshot for Windows PC',
+	updates: 'Hunt: Showdown Cheats live status after Easy Anti-Cheat and game patches',
+	faq: 'Hunt: Showdown Cheats FAQ — delivery, setup, and update answers',
+	support: 'Hunt: Showdown Cheats support page for license and setup help',
+	undetected: 'Hunt: Showdown Cheats undetected status overview for Windows PC',
+	wallhack: 'Hunt: Showdown wallhack visibility through walls in a raid',
+	radar: 'Hunt: Showdown extraction ESP overlay showing nearby threats',
+	eac: 'Hunt: Showdown Cheats maintenance after a Easy Anti-Cheat patch',
+	'cheats-2026': 'Hunt: Showdown Cheats product overview for Hunt: Showdown',
+	hacks: 'Hunt: Showdown Cheats product page — ESP, aimbot, and radar',
+	'cheat-download': 'Hunt: Showdown Cheats download and install delivery flow',
+	'mod-menu': 'Hunt: Showdown Cheats in-game menu controls',
+	'soft-aim': 'Hunt: Showdown soft aim FOV and smoothness settings',
+	'best-cheats': 'Hunt: Showdown Cheats overview for Hunt: Showdown on PC',
+	'aimbot-hack': 'Hunt: Showdown aimbot hack controls and bone priority',
+	'esp-hack': 'Hunt: Showdown ESP hack boxes and loot markers',
+	'unlock-all': 'Hunt: Showdown Cheats license features overview',
+	privacy: 'Hunt: Showdown Cheats privacy policy page',
+	refund: 'Hunt: Showdown Cheats refund policy page',
+	terms: 'Hunt: Showdown Cheats terms of use page',
+};
