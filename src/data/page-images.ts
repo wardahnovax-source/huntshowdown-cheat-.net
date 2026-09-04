@@ -22,7 +22,7 @@ export const pageImageSrcById: Record<PageId, string> = {
 	'hunt-showdown-esp': huntImages.playerEsp,
 	'hunt-showdown-aimbot': huntImages.aimbotCombat,
 	features: huntImages.aimbotSkeleton,
-	pricing: huntImages.cheatsCombat,
+	pricing: huntImages.aimbotCombat,
 	setup: huntImages.playerEsp,
 	updates: '/images/hunt-showdown-cheats-hero-1920w.webp',
 	faq: huntImages.aimbotSkeleton,

@@ -46,13 +46,21 @@ const introEditByPage: Partial<Record<PageId, string>> = {
 	faq: 'faqIntro',
 };
 const introEdit = locale === 'en' ? introEditByPage[pageId] : undefined;
-const gallery = [
-	{ src: crawl.src, alt: page.imageAlt || crawl.caption },
-	...huntImages.product.slice(0, 2).map((img) => ({
-		src: img.src,
-		alt: img.alt,
-	})),
+const screenshotGallery = [
+	{ src: huntImages.aimbotCombat, alt: 'Aimbot FOV circle and skeleton ESP in Hunt: Showdown' },
+	{ src: huntImages.playerEsp, alt: 'Hunter ESP boxes and distance tags in Hunt: Showdown' },
+	{ src: huntImages.espWallhack, alt: 'Hunter wallhack outlines through fog and brush' },
 ];
+const gallery =
+	pageId === 'features' || pageId === 'pricing'
+		? screenshotGallery
+		: [
+				{ src: crawl.src, alt: page.imageAlt || crawl.caption },
+				...huntImages.product.slice(0, 2).map((img) => ({
+					src: img.src,
+					alt: img.alt,
+				})),
+			];
 
 const pageUrl = new URL(getLocalizedPath(pageId, locale), siteConfig.url).href;
 const priceValidUntil = '2027-12-31';

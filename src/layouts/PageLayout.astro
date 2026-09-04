@@ -112,7 +112,10 @@ const useHomeHero =
 	lcpImageSizes={useHomeHero ? heroSizes : '100vw'}
 >
 	<Navbar locale={locale} pageId={pageId} />
-	<main class="page">
+	<main
+		class:list={['page', { 'page--shot': pageId === 'features' || pageId === 'pricing' }]}
+		style={pageId === 'features' || pageId === 'pricing' ? `--page-shot: url('${heroImage}')` : undefined}
+	>
 		<section class="banner">
 			<div class="banner__media">
 				{
@@ -224,8 +227,30 @@ const useHomeHero =
 
 <style>
 	.page {
+		position: relative;
 		overflow-x: clip;
 		padding-bottom: calc(3rem + env(safe-area-inset-bottom, 0px));
+	}
+
+	.page--shot::before {
+		content: '';
+		position: absolute;
+		inset: 0;
+		z-index: 0;
+		pointer-events: none;
+		background:
+			linear-gradient(180deg, rgba(10, 11, 8, 0.55) 0%, rgba(10, 11, 8, 0.88) 42%, var(--bg) 100%),
+			var(--page-shot) center 42% / cover no-repeat;
+		opacity: 1;
+	}
+
+	.page--shot > :global(*) {
+		position: relative;
+		z-index: 1;
+	}
+
+	.page--shot .banner__img {
+		object-position: 58% 42%;
 	}
 
 	.banner {
@@ -261,6 +286,15 @@ const useHomeHero =
 			rgba(8, 9, 10, 0.94) 0%,
 			rgba(8, 9, 10, 0.72) 42%,
 			rgba(8, 9, 10, 0.25) 100%
+		);
+	}
+
+	.page--shot .banner__scrim {
+		background: linear-gradient(
+			90deg,
+			rgba(10, 11, 8, 0.82) 0%,
+			rgba(10, 11, 8, 0.48) 46%,
+			rgba(10, 11, 8, 0.18) 100%
 		);
 	}
 
