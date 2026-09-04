@@ -124,13 +124,57 @@ const links = [
 		z-index: 120;
 	}
 
-	.site-header .lang-switcher__link {
+	.site-header .lang-switcher__list,
+	.site-panel .lang-switcher__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		display: grid;
+		gap: 0.15rem;
+	}
+
+	.site-header .lang-switcher__note,
+	.site-panel .lang-switcher__note {
+		margin: 0 0 0.5rem;
+		padding: 0.45rem 0.55rem;
+		border-radius: 0.55rem;
+		background: color-mix(in srgb, #fff 6%, transparent);
+		color: var(--ink-muted);
+		font-size: 0.72rem;
+		line-height: 1.4;
+	}
+
+	.site-header .lang-switcher__link,
+	.site-panel .lang-switcher__link {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: baseline;
+		column-gap: 0.35rem;
+		row-gap: 0.1rem;
+		padding: 0.5rem 0.65rem;
+		border-radius: 0.55rem;
 		color: var(--ink);
 	}
 
 	.site-header .lang-switcher__link:hover,
-	.site-header .lang-switcher__link.is-current {
+	.site-header .lang-switcher__link.is-current,
+	.site-panel .lang-switcher__link:hover,
+	.site-panel .lang-switcher__link.is-current {
 		background: color-mix(in srgb, var(--magenta) 12%, transparent);
+	}
+
+	.site-header .lang-switcher__native,
+	.site-panel .lang-switcher__native {
+		font-size: 0.86rem;
+		font-weight: 700;
+	}
+
+	.site-header .lang-switcher__region,
+	.site-panel .lang-switcher__region {
+		font-size: 0.72rem;
+		font-weight: 500;
+		color: var(--ink-muted);
+		white-space: nowrap;
 	}
 
 	.site-panel .lang-switcher {

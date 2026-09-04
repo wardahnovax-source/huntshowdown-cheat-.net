@@ -57,7 +57,7 @@ export default function LanguageSwitcher({ currentLocale, locales, hrefForLocale
 									}}
 								>
 									<span className="lang-switcher__native">{locale.nativeName}</span>
-									<span className="lang-switcher__region">{locale.region}</span>
+									<span className="lang-switcher__region"> — {locale.region}</span>
 								</a>
 							</li>
 						);

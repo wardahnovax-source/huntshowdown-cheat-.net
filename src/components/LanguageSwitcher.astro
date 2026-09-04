@@ -64,7 +64,7 @@ const currentMeta = locales.find((l) => l.code === currentLocale)!;
 								data-locale={locale.code}
 							>
 								<span class="lang-switcher__native">{locale.nativeName}</span>
-								<span class="lang-switcher__region">{locale.region}</span>
+								<span class="lang-switcher__region"> — {locale.region}</span>
 							</a>
 						</li>
 					);
